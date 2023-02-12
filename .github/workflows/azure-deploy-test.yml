@@ -8,9 +8,9 @@ jobs:
     name: deploy a resource group and storage account to azure
     uses: JasonCubic/reusable-workflow-pipeline/.github/workflows/rw-azure-deploy-rg-and-stg.yml@main
     with:
-      tenant-id: c9b046ac-2035-4d3c-b81b-9722f126b124
-      subscription-id: f8e0f94e-9667-45a6-a3eb-9596933d0903
       resource-group-name: rg-ga-test
-      client-id: 7e75b8a7-93af-4c3e-804a-492b057499e8
     secrets:
+      tenant-id: c9b046ac-2035-4d3c-b81b-9722f126b124
       client-secret: ${{ secrets.CLIENT_SECRET }}
+      client-id: ${{ secrets.CLIENT_ID }}
+      subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
