@@ -11,5 +11,5 @@ jobs:
     # uses: USER_OR_ORG_NAME/REPO_NAME/.github/workflows/REUSABLE_WORKFLOW_FILE.yml@TAG_OR_BRANCH
     uses: JasonCubic/reusable-workflow-pipeline/.github/workflows/rw-hello-world.yml@main
     with:
-      runs-on: ubuntu-latest
+      runs-on: '["ubuntu-latest", "Linux"]'
       who-to-greet: reusable workflows will work!
