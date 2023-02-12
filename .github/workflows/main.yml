@@ -12,7 +12,7 @@ jobs:
 
     # https://github.blog/2022-02-10-using-reusable-workflows-github-actions/
     # uses: USER_OR_ORG_NAME/REPO_NAME/.github/workflows/REUSABLE_WORKFLOW_FILE.yml@TAG_OR_BRANCH
-    uses: JasonCubic/reusable-workflow-pipeline/.github/workflows/reusable/hello-world/main.yml@main
+    uses: JasonCubic/reusable-workflow-pipeline/.github/workflows/rw-hello-world.yml@main
 
     with:
       RUNS_ON: ubuntu-latest
