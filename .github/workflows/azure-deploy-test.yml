@@ -9,6 +9,7 @@ jobs:
     uses: JasonCubic/reusable-workflow-pipeline/.github/workflows/rw-azure-deploy-rg-and-stg.yml@main
     with:
       resource-group-name: rg-ga-test
+      storage-account-prefix: strg
     secrets:
       tenant-id: c9b046ac-2035-4d3c-b81b-9722f126b124
       client-secret: ${{ secrets.CLIENT_SECRET }}
